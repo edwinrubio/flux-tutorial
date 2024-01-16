@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podinforegistry
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: podinforegistry
+  template:
+    metadata:
+      labels:
+        app: podinforegistry
+    spec:
+      containers:
+        - name: podinfod
+          image: ghcr.io/stefanprodan/podinfo:5.0.0 
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 9898
+              protocol: TCP

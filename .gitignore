@@ -1,0 +1,36 @@
+# Archivos de configuración específicos de Visual Studio Code
+.vscode/
+
+# Archivos de configuración de Flux CD
+.flux.yaml
+.flux.yaml.cue
+
+# Directorio de trabajo de Flux CD
+.flux/
+
+# Archivos de estado de Flux CD
+.fluxcd/
+
+# Archivos de registro de Flux CD
+.flux.logs/
+
+# Archivos de configuración local de herramientas de desarrollo
+.env
+
+# Dependencias y módulos generados
+/node_modules/
+/vendor/
+
+# Archivos de registro
+logs/
+*.log
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
+
+# Archivos de configuración de sistema
+.DS_Store
+Thumbs.db
